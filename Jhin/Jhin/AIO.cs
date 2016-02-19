@@ -21,6 +21,9 @@ namespace Jhin
         };
 
         public static bool Initialized;
+       Skin = Menu.AddSubMenu("Skin Changer", "SkinChanger");
+       Skin.Add("checkSkin", new CheckBox("Use Skin Changer"));
+       Skin.Add("skin.Id", new Slider("Skin", 1, 0, 1));    }
 
         public static List<Action> Initializers = new List<Action>
         {
